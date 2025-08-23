@@ -1,38 +1,111 @@
-.App {
+.home-wrapper {
+  background-color: #f8f9fa;
+  padding: 50px 0;
   text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  /* wrapper to push footer down*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+ .main-banner {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  margin-top: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
+/* Typing animation for h4 */
+.typing-text {
+  display: inline-block; /* needed for width control*/
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  border-right: 3px solid #007bff; /* cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 6s steps(80, end) forwards, blink 0.75s step-end infinite;
+}
+
+/* typing expands width */
+
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 60ch; /* length of your sentence */
   }
 }
+
+/* cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.home-wrapper img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 20px 0;
+  border: 3px solid #007bff;
+}
+
+.btn-link {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-link:hover {
+  background: #0056b3;
+}
+
+.tech-stack {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start; /* keeps it left-aligned  */
+  margin-top: 20px;
+}
+
+.tech-stack p {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.tech-stack img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Footer styles */
+.site-footer {
+  text-align: center;
+  padding: 15px;
+  background: #f1f1f1;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
