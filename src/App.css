@@ -91,6 +91,31 @@
   object-fit: contain;
 }
 
+.projects-wrapper {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 16px;
+
+  /* Wrapper to push footer down */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-paragraph {
+  margin-top: 50px;
+  color: green;
+}
+
+.project-img {
+  width: 500px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
 /* Footer styles */
 .site-footer {
   text-align: center;

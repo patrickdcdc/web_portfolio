@@ -1,7 +1,32 @@
 import React from "react";
 
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <>
+      <section className="projects-wrapper">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h4>
+                I have developed, deployed, as well as collaborated in many
+                software projects. Below are some of them.
+              </h4>
+              <p className="project-paragraph">e-commerce app</p>
+              <div>
+                <img
+                  className="project-img"
+                  src="images/webstore_snip.png"
+                  alt="webstore"
+                />
+                <br />
+                <a href="https://webstore-3.netlify.app/">Live demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default Projects;
