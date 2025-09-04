@@ -27,14 +27,9 @@ const Home = () => {
                   </Link>
                 </div>
                 <div>
-                  <a href="#contact" className="btn-link">
-                    Contact
-                  </a>
-                </div>
-                <div>
-                  <a href="#aboutme" className="btn-link">
+                  <Link to="About" className="btn-link">
                     About me
-                  </a>
+                  </Link>
                 </div>
                 <div className="tech-stack">
                   <p>Tech stack:</p>

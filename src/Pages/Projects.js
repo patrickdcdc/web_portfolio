@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa6";
 
 const Projects = () => {
   return (
@@ -20,6 +21,10 @@ const Projects = () => {
                 />
                 <br />
                 <a href="https://webstore-3.netlify.app/">Live demo</a>
+              </div>
+              <div className="github">
+                <FaGithub />
+                <a href="https://github.com/patrickdcdc">Github</a>
               </div>
             </div>
           </div>

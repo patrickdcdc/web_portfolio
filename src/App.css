@@ -54,6 +54,7 @@
   border-radius: 50%;
   margin: 20px 0;
   border: 3px solid #007bff;
+  margin-top: 35px;
 }
 
 .btn-link {
@@ -77,12 +78,13 @@
   align-items: center;
   gap: 10px;
   justify-content: flex-start; /* keeps it left-aligned  */
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .tech-stack p {
   font-weight: 700;
   margin-right: 10px;
+  margin-top: 30px;
 }
 
 .tech-stack img {
@@ -91,6 +93,7 @@
   object-fit: contain;
 }
 
+/* Projects section starts here*/
 .projects-wrapper {
   background-color: #f8f9fa;
   padding: 50px 0;
@@ -113,8 +116,43 @@
   width: 500px;
   height: 250px;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 15px;
 }
+.github {
+  margin-top: 100px;
+  font-size: large;
+}
+/* Projects section ends here */
+
+/* About me section starts here */
+
+.about-me-wrapper {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 16px;
+
+  /* Wrapper to push footer down */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-me-wrapper p {
+  font-weight: 500;
+  font-size:larger;
+}
+
+.about-me-wrapper h4 {
+  margin-bottom: 0px;
+  margin-top: 150px;
+}
+
+.react-icons {
+  font-size: large;
+}
+/* About me section ends here */
 
 /* Footer styles */
 .site-footer {
