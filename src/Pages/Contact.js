@@ -15,7 +15,7 @@ const Contact = () => {
     //Opens the user's mail client with the message pre-filled
     const subject = encodeURIComponent(`Portfolio contact from ${form.name}`);
     const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail:${form.email}\n\${form.message}`,
+      `Name: ${form.name}\nEmail:${form.email}\n\nMessage:\n${form.message}`,
     );
     window.location.href = `mailto:patrickmutua719@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
